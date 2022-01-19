@@ -267,7 +267,9 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  
 }
+
 .l-side-nav::before {
   content: '';
   position: absolute;
@@ -275,11 +277,11 @@ body {
   left: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 2px;
+  width: 5px;
   height: 70%;
   max-height: 750px;
   background-color: #555;
-  opacity: 0.35;
+  opacity: 0.75;
   z-index: 10;
 }
 @media (max-width: 1180px) {
@@ -565,7 +567,7 @@ min-height: 100%;
   position: relative;
   top: -5px;
   color: #fff;
-  font-size: 6px;
+  font-size: 10px;
   cursor: pointer;
 }
 .side-nav > li span {
@@ -573,8 +575,8 @@ min-height: 100%;
   top: 3px;
   left: 10px;
   color: #fff;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 700;
   opacity: 0;
   visibility: hidden;
 }
@@ -583,8 +585,8 @@ min-height: 100%;
   top: 3px;
   left: 10px;
   color: #555;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 700;
 }
 .side-nav li:nth-child(1)::before {
   content: '01';
