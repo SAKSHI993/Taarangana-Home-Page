@@ -281,7 +281,7 @@ body {
   height: 70%;
   max-height: 750px;
   background-color: #555;
-  opacity: 0.35;
+  opacity: 0.75;
   z-index: 10;
 }
 @media (max-width: 1180px) {
