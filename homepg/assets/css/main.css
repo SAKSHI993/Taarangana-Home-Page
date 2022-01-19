@@ -1083,7 +1083,7 @@ min-height: 100%;
   transition: left 0.2s ease-in-out;
 }
 .about--banner img {
-  position: absolute;
+  position: fixed;
   bottom: -90px;
   right: -12px;
 }
