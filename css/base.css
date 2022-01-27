@@ -557,6 +557,30 @@ only screen and (min-device-pixel-ratio : 1.5) { */
 @media screen and (max-width: 991px) {
   .content__title {
     position: relative;
+    left: 145%;
+    top: 80%;
+    font-size: 2000%;
+    width: 300%;
+}
+
+  .button {
+    position: relative;
+    top: 810%;
+    left: 150%;
+    font-size: 900%;
+    padding-bottom: 20%;
+    width: 100%;
+    height: 70%;
+}
+
+  .year {
+		position: relative;
+    left: 27%;
+  }
+}
+@media screen and (max-width: 850px){
+  .content__title {
+    position: relative;
     left: 132%;
     top: 100%;
     font-size: 2000%;
@@ -565,7 +589,7 @@ only screen and (min-device-pixel-ratio : 1.5) { */
 
   .button {
     position: relative;
-		top: 710%;
+    top: 710%;
 left: 235%;
     font-size: 700%;
     padding: 20%;
@@ -574,11 +598,10 @@ left: 235%;
   }
 
   .year {
-		position: relative;
+    position: relative;
     left: 30%;
   }
 }
-
 @media screen and (max-width: 750px) {
   .content__title {
     position: relative;
