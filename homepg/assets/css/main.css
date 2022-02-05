@@ -1192,9 +1192,9 @@ min-height: 100%;
     top: 205px;
     left: 205px;
   }
-  .about--banner img {
+  /*.about--banner img {
     display: none;
-  }
+  } */
   .about--options {
     display: none;
   }
@@ -1738,8 +1738,8 @@ min-height: 100%;
 /* Home page bg img */
 .intro img{
   min-height: 100%;
-min-width: 1024px;
-/* opacity: 0.9; */
+/*min-width: 1024px;
+ opacity: 0.9; */
 
 /* Set up proportionate scaling */
 width: 100%;
