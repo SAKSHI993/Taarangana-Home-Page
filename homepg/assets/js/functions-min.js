@@ -1447,7 +1447,7 @@
   });
 
 // FONT
-const colors = ["#EF2F88", "#FFC900", "#FF5403"];
+const colors = ["#0CECDD","#28DF99","#113CFC"];
 const numLines = 3;
 var currCount = numLines;
 const texts = document.querySelectorAll("#textClip text");
