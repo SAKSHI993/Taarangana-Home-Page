@@ -422,23 +422,65 @@ a:hover {
     pointer-events: auto;
   }
 }
+/* @media screen and (max-width: 2700px){
+  .content__title {
+    position: relative;
+      left: 5%;
+      top: -10%;
+      font-size: 1200%;
+      width: 80%;
+}
+
+  .button {
+    position: relative;
+top: 360%;
+left: 175%;
+font-size: 400%;
+padding-bottom: 15%;
+width: 55%;
+height: 40%;
+}
+}
+@media screen and (max-width: 2180px) {
+  .content__title {
+    position: relative;
+      left: 10%;
+      top: -10%;
+      font-size: 1200%;
+      width: 80%;
+}
+
+  .button {
+    position: relative;
+top: 460%;
+left: 175%;
+font-size: 400%;
+padding-bottom: 20%;
+width: 55%;
+height: 40%;
+}
+.year {
+  position: relative;
+  left: 27%;
+}
+} */
 @media screen and (max-width: 991px) {
   .content__title {
     position: relative;
       left: 5%;
-      top: 0;
+      top: -10%;
       font-size: 600%;
       width: 80%;
 }
 
   .button {
     position: relative;
-    top: 460%;
-    left: 150%;
-    font-size: 400%;
-    padding-bottom: 45%;
-    width: 105%;
-    height: 40%;
+top: 260%;
+left: 160%;
+font-size: 300%;
+padding-bottom: 35%;
+width: 85%;
+height: 40%;
 }
 
   .year {
@@ -449,20 +491,20 @@ a:hover {
 @media screen and (max-width: 850px){
   .content__title {
     position: relative;
-        left: 3%;
-        top: 1%;
+        left: 5%;
+        top: 0%;
         font-size: 600%;
         width: 90%;
   }
 
   .button {
     position: relative;
-    top: 200%;
-    left: -55%;
-    font-size: 200%;
-    padding: 20%;
-    width: 200%;
-    height: 100%;
+        top: 150%;
+        left: -10%;
+        font-size: 200%;
+        padding: 20%;
+        width: 150%;
+        height: 100%;
   }
 
   .year {
@@ -473,17 +515,19 @@ a:hover {
 @media screen and (max-width: 750px) {
   .content__title {
     position: relative;
-    left: 170%;
-    top: 50%;
-    font-size: 2000%;
+left: 0;
+top: 10%;
+font-size: 400%;
+width: 70%;
   }
 
   .button {
     position: relative;
-    top: 410%;
-    left: 350%;
-    font-size: 700%;
-    padding: 20%;
+        top: 250%;
+    left: -25%;
+    font-size: 200%;
+    padding: 10%;
+    width: 130%
   }
 	.year {
 		position: relative;
@@ -493,43 +537,46 @@ a:hover {
 
 @media screen and (max-width: 655px) {
   .content__title {
-		position: relative;
-left: 190%;
-top: 150%;
-font-size: 1700%;
-width: 400%;
-  }
+      position: relative;
+        left: 5%;
+        top: 10%;
+        font-size: 400%;
+        width: 80%;
+    }
 
-  .button {
-		position: relative;
-    top: 710%;
-    left: 250%;
-    font-size: 600%;
-    padding: 10%;
-  }
-	.year {
-		position: relative;
-    left: 30%;
-  }
+    .button {
+      position: relative;
+      top: 150%;
+      left: -5%;
+      font-size: 200%;
+      padding: 10%;
+      width: 130%
+    }
+  	.year {
+  		position: relative;
+      left: 30%;
+    }
 }
 
 @media screen and (max-width: 600px) {
   .content__title {
-		position: relative;
-    left: 145%;
-    top: 150%;
-    font-size: 1500%;
+    position: relative;
+      left: 0;
+      top: 10%;
+      font-size: 400%;
+      width: 80%;
   }
 
   .button {
-		position: relative;
-top: 810%;
-left: 280%;
-font-size: 500%;
-padding: 10%;
+    position: relative;
+    top: 150%;
+    left: -5%;
+    font-size: 200%;
+    padding: 10%;
+    width: 130%
   }
-	.year {
-		position: relative;
+  .year {
+    position: relative;
     left: 30%;
   }
 }
@@ -551,29 +598,31 @@ padding: 10%;
     padding: 10%;
     width: 130%
   }
-	.year {
-		position: relative;
+  .year {
+    position: relative;
     left: 30%;
   }
 }
 
 @media screen and (max-width: 530px) {
   .content__title {
-		position: relative;
-	    left: 160%;
-	    top: 150%;
-	    font-size: 1400%;
+    position: relative;
+      left: 0;
+      top: 10%;
+      font-size: 360%;
+      width: 85%;
   }
 
   .button {
-		position: relative;
-    top: 810%;
-    left: 270%;
-    font-size: 500%;
+    position: relative;
+    top: 150%;
+    left: -5%;
+    font-size: 200%;
     padding: 10%;
+    width: 130%
   }
-	.year {
-		position: relative;
+  .year {
+    position: relative;
     left: 30%;
   }
 }
@@ -603,10 +652,10 @@ padding: 10%;
 @media screen and (max-width: 400px) {
   .content__title {
     position: relative;
-    left: 7.5%;
-    top: 15%;
-    font-size: 300%;
-    width: 100%;
+      left: 5%;
+      top: 15%;
+      font-size: 250%;
+      width: 80%;
   }
 
   .button {
@@ -625,21 +674,21 @@ padding: 10%;
 @media screen and (max-width: 340px) {
   .content__title {
     position: relative;
-  left: 0;
-  top: 10%;
-  font-size: 200%;
-  width: 80%;
+      left: 2%;
+      top: 15%;
+      font-size: 200%;
+      width: 80%;
   }
 
   .button {
     position: relative;
-top: 300%;
-left: -5%;
-font-size: 150%;
-padding: 10%;
+    top: 400%;
+    left: -2%;
+    font-size: 100%;
+    padding: 15%;
   }
-	.year {
-		position: relative;
+  .year {
+    position: relative;
     left: 30%;
   }
 }
