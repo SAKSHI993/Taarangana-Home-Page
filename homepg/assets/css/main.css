@@ -1718,6 +1718,26 @@ min-height: 100%;
   transition-delay: 0.16s;
 }
 
+.outer-nav li.is-vis:nth-child(6) {
+    -webkit-transition-delay: 0.20s;
+    transition-delay: 0.20s;
+
+}
+.outer-nav li.is-vis:nth-child(7) {
+  -webkit-transition-delay: 0.24s;
+  transition-delay: 0.24s;
+}
+
+.outer-nav li.is-vis:nth-child(8) {
+  -webkit-transition-delay: 0.28s;
+  transition-delay: 0.28s;
+}
+
+.outer-nav li.is-vis:nth-child(9) {
+  -webkit-transition-delay: 0.32s;
+  transition-delay: 0.32s;
+}
+
 /* Home page bg img */
 .intro img{
   min-height: 100%;
