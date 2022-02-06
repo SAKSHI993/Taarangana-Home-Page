@@ -241,6 +241,123 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
+/* button */
+.bubbly-button {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  /* display: inline-block; */
+  font-size: 2em;
+  width: 130px;
+  height: 60px;
+  padding: 1em 2em;
+  margin: 0 0 20px 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ff0081;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  margin-left:auto;margin-right:auto;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+.bubbly-button text{
+  text-align: center;
+}
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+  position: center;
+  content: '';
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #e60074;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+/* .btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 0.6em;
+  color: red;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+  btn:hover,
+  btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+
+
+.btn .fourth {
+  
+  border-color: yellow;
+  color: #fff;
+  
+   
+}
+.btn .fourth .btn-background{
+  image: linear-gradient(45deg, yellow 50%, transparent 50%);
+  position: 100%;
+  size: 400%;
+
+transition: 300ms ease-in-out;
+} 
+fourth:hover {
+  background-position: 0;
+} */
+
+
+
+
 .l-viewport {
   position: relative;
   width: 100%;
@@ -651,7 +768,7 @@ min-height: 100%;
 .intro--banner h1 {
   position: relative;
   font-size: 68px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1;
   z-index: 1;
 }
@@ -744,6 +861,13 @@ min-height: 100%;
   }
   .intro--banner h1 {
     font-size: 44px;
+    font-weight: bold;
+  }
+  /* //for text */
+  .intro--banner text {
+    font-size: 75px;
+    font-weight: bolder;
+    bold: 1000;
   }
   .intro--banner img {
     width: 330px;
@@ -970,6 +1094,8 @@ min-height: 100%;
     display: none;
   }
 }
+
+
 .about {
   position: relative;
   display: -webkit-box;
@@ -1659,7 +1785,7 @@ min-height: 100%;
   transform-style: preserve-3d;
   -webkit-transform: translateX(350px) translateZ(-1000px);
   transform: translateX(350px) translateZ(-1000px);
-  font-size: 45px;
+  font-size: 39px;
   font-weight: 900;
   opacity: 0;
   cursor: pointer;
@@ -1694,12 +1820,12 @@ min-height: 100%;
 }
 @media (max-width: 767px) {
   .outer-nav > li {
-    font-size: 34px;
+    font-size: 28px;
   }
 }
 @media (max-width: 600px) {
   .outer-nav > li {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 .outer-nav li.is-vis:nth-child(2) {
