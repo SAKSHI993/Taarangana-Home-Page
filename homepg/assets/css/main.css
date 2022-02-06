@@ -1090,6 +1090,7 @@ min-height: 100%;
   position: relative;
   width: 150px;
   height: 75px;
+  bottom: 30px;
   text-decoration: none;
   color: #fff;
   margin-right: 50px;
@@ -1790,6 +1791,12 @@ svg {
   animation: textclip 3.5s linear infinite;
   display: inline-block;
   font-size: 50px;
+}
+
+@media (max-width: 710px){
+  .animate-charcter{
+    font-size: 33px;
+  }
 }
 
 @keyframes textclip {
