@@ -250,7 +250,7 @@ a:hover {
 
 .button {
   position: relative;
-  top: 1050%;
+  top: 1250%;
   left: 185%;
   background-color: #FDA65D;
   width: 35%;
@@ -321,6 +321,7 @@ a:hover {
 
 .content__title {
   position: relative;
+  top:-10%;
   color: var(--color-title);
   font-size: 10vw;
   text-transform: uppercase;
