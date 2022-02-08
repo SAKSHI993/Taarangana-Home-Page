@@ -9,7 +9,7 @@ $( document ).ready(function() {
 
     if (!($('.outer-nav').hasClass('is-vis'))) {
 
-      e.preventDefault();
+      // e.preventDefault();
 
       var delta = (e.originalEvent.wheelDelta) ? -e.originalEvent.wheelDelta : e.originalEvent.detail * 20;
 
@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
   });
 
-  $('.side-nav li, .outer-nav li').click(function(){
+  $('.side-nav li').click(function(){
 
     if (!($(this).hasClass('is-active'))) {
 
@@ -76,7 +76,7 @@ $( document ).ready(function() {
   $(document).keyup(function(e){
 
     if (!($('.outer-nav').hasClass('is-vis'))) {
-      e.preventDefault();
+      // e.preventDefault();
       updateHelper(e);
     }
 
@@ -119,9 +119,9 @@ $( document ).ready(function() {
   // sync side and outer navigations
   function updateNavs(nextPos) {
 
-    $('.side-nav, .outer-nav').children().removeClass('is-active');
+    $('.side-nav').children().removeClass('is-active');
     $('.side-nav').children().eq(nextPos).addClass('is-active');
-    $('.outer-nav').children().eq(nextPos).addClass('is-active');
+    //$('.outer-nav').children().eq(nextPos).addClass('is-active');
 
   }
 
@@ -142,12 +142,12 @@ $( document ).ready(function() {
       $('.main-content').children().eq(curPos).children().addClass('section--prev');
     }
 
-    if (nextPos !== 0 && nextPos !== lastItem) {
-      $('.header--cta').addClass('is-active');
-    }
-    else {
-      $('.header--cta').removeClass('is-active');
-    }
+    // if (nextPos !== 0 && nextPos !== lastItem) {
+    //   $('.header--cta').addClass('is-active');
+    // }
+    // else {
+    //   $('.header--cta').removeClass('is-active');
+    // }
 
   }
 
@@ -159,17 +159,17 @@ $( document ).ready(function() {
       setTimeout(function(){
         $('.perspective').addClass('effect-rotate-left--animate');
       }, 25);
-      $('.outer-nav, .outer-nav li, .outer-nav--return').addClass('is-vis');
+      $('.outer-nav, .outer-nav--return').addClass('is-vis');
 
     });
 
-    $('.outer-nav--return, .outer-nav li').click(function(){
+    $('.outer-nav--return').click(function(){
 
       $('.perspective').removeClass('effect-rotate-left--animate');
       setTimeout(function(){
         $('.perspective').removeClass('perspective--modalview');
       }, 400);
-      $('.outer-nav, .outer-nav li, .outer-nav--return').removeClass('is-vis');
+      $('.outer-nav, .outer-nav--return').removeClass('is-vis');
 
     });
 
@@ -273,14 +273,14 @@ $( document ).ready(function() {
 
   }
 
-  outerNav();
+ // outerNav();
   workSlider();
   transitionLabels();
 
 });
 
 // FONT
-const colors = ['#f5a147','#51cad8','#112b39'];
+const colors = ["#B762C1","#F35588","#4CD3C2"];
 const numLines = 3;
 var currCount = numLines;
 const texts = document.querySelectorAll("#textClip text");

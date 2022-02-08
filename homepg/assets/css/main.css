@@ -1752,15 +1752,16 @@ min-height: 100%;
 .outer-nav--return.is-vis {
   display: block;
 }
-.outer-nav > li a{
+.outer-nav >  a{
   color: #FFFFFF;
+  text-decoration: none;
 }
-.outer-nav > li {
+.outer-nav > a {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform: translateX(350px) translateZ(-1000px);
   transform: translateX(350px) translateZ(-1000px);
-  font-size: 39px;
+  font-size: 35px;
   font-weight: 900;
   opacity: 0;
   cursor: pointer;
@@ -1769,7 +1770,7 @@ min-height: 100%;
   transition: transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
 }
-.outer-nav > li.is-vis {
+.outer-nav > a.is-vis {
   -webkit-transform: translateX(0) translateZ(0);
   transform: translateX(0) translateZ(0);
   opacity: 1;
@@ -1778,7 +1779,7 @@ min-height: 100%;
   transition: transform 0.4s, opacity 0.4s;
   transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
 }
-.outer-nav > li::before {
+.outer-nav > a::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1790,52 +1791,52 @@ min-height: 100%;
   opacity: 0;
   background-color: #0f33ff;
 }
-.outer-nav > li.is-active::before {
+.outer-nav > a.is-active::before {
   opacity: 1;
 }
 @media (max-width: 767px) {
-  .outer-nav > li {
+  .outer-nav > a {
     font-size: 28px;
   }
 }
 @media (max-width: 600px) {
-  .outer-nav > li {
+  .outer-nav > a {
     font-size: 18px;
   }
 }
-.outer-nav li.is-vis:nth-child(2) {
+.outer-nav a.is-vis:nth-child(2) {
   -webkit-transition-delay: 0.04s;
   transition-delay: 0.04s;
 }
-.outer-nav li.is-vis:nth-child(3) {
+.outer-nav a.is-vis:nth-child(3) {
   -webkit-transition-delay: 0.08s;
   transition-delay: 0.08s;
 }
-.outer-nav li.is-vis:nth-child(4) {
+.outer-nav a.is-vis:nth-child(4) {
   -webkit-transition-delay: 0.12s;
   transition-delay: 0.12s;
 }
-.outer-nav li.is-vis:nth-child(5) {
+.outer-nav a.is-vis:nth-child(5) {
   -webkit-transition-delay: 0.16s;
   transition-delay: 0.16s;
 }
 
-.outer-nav li.is-vis:nth-child(6) {
+.outer-nav a.is-vis:nth-child(6) {
     -webkit-transition-delay: 0.20s;
     transition-delay: 0.20s;
 
 }
-.outer-nav li.is-vis:nth-child(7) {
+.outer-nav a.is-vis:nth-child(7) {
   -webkit-transition-delay: 0.24s;
   transition-delay: 0.24s;
 }
 
-.outer-nav li.is-vis:nth-child(8) {
+.outer-nav a.is-vis:nth-child(8) {
   -webkit-transition-delay: 0.28s;
   transition-delay: 0.28s;
 }
 
-.outer-nav li.is-vis:nth-child(9) {
+.outer-nav a.is-vis:nth-child(9) {
   -webkit-transition-delay: 0.32s;
   transition-delay: 0.32s;
 }

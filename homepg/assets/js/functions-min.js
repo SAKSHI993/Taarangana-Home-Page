@@ -34,7 +34,7 @@
       s;
     (s = t.prototype = Object.create(n)),
       (s.constructor = t),
-      (s._super = n),
+      (s.super = n),
       i && Tt(s, i);
   }
   function c(t, e) {
@@ -161,7 +161,7 @@
       (e.deltaTime = e.timeStamp - r.timeStamp),
       (e.angle = z(a, l)),
       (e.distance = M(a, l)),
-      _(i, e),
+      (i, e),
       (e.offsetDirection = R(e.deltaX, e.deltaY));
     var c = O(e.deltaTime, e.deltaX, e.deltaY);
     (e.overallVelocityX = c.x),
@@ -699,9 +699,9 @@
     //     ? this.preventSrc(e)
     //     : void 0;
     // },
-    // // preventSrc: function (t) {
-    // //   (this.manager.session.prevented = !0), t.preventDefault();
-    // // },
+    // preventSrc: function (t) {
+    //   (this.manager.session.prevented = !0), t.preventDefault();
+    // },
   };
   var fe = 1,
     ve = 2,
@@ -1124,10 +1124,10 @@
       this.options.domEvents && ut(t, e);
       var i = this.handlers[t] && this.handlers[t].slice();
       if (i && i.length) {
-        // (e.type = t),
-        //   (e.preventDefault = function () {
-        //     e.srcEvent.preventDefault();
-        //   });
+        (e.type = t);
+          // (e.preventDefault = function () {
+          //   e.srcEvent.preventDefault();
+          // })
         for (var n = 0; n < i.length; ) i[n](e), n++;
       }
     },
@@ -1212,8 +1212,8 @@
     }
     function e(t) {
       $(".side-nav, .outer-nav").children().removeClass("is-active"),
-        $(".side-nav").children().eq(t).addClass("is-active");
-        // $(".outer-nav").children().eq(t).addClass("is-active");
+        $(".side-nav").children().eq(t).addClass("is-active"),
+        $(".outer-nav").children().eq(t).addClass("is-active");
     }
     function i(t, e, i) {
       $(".main-content").children().removeClass("section--is-active"),
@@ -1235,10 +1235,10 @@
               .children()
               .eq(t)
               .children()
-              .addClass("section--prev");
-        // 0 !== e && e !== i
-        //   ? $(".header--cta").addClass("is-active")
-        //   : $(".header--cta").removeClass("is-active");
+              .addClass("section--prev"),
+        0 !== e && e !== i
+          ? $(".header--cta").addClass("is-active")
+          : $(".header--cta").removeClass("is-active");
     }
     function n() {
       $(".header--nav-toggle").click(function () {
@@ -1415,7 +1415,7 @@
             t(-1));
       }
     }),
-      $(".side-nav li").click(function () {
+      $(".side-nav li, .outer-nav li").click(function () {
         if (!$(this).hasClass("is-active")) {
           var t = $(this),
             n = t.parent().find(".is-active"),
@@ -1445,44 +1445,3 @@
       s(),
       r();
   });
-
-// FONT
-const colors = ["#B762C1","#F35588","#4CD3C2"];
-const numLines = 3;
-var currCount = numLines;
-const texts = document.querySelectorAll("#textClip text");
-const blobs = document.querySelectorAll("#background path");
-
-function colorBlobs() {
-  blobs.forEach((blob) => {
-    blob.style.fill = colors[Math.floor(Math.random() * colors.length)];
-  });
-}
-
-function nextIteration() {
-  // Change the color of all the blobs
-  colorBlobs();
-
-  // Hide the old set of lines
-  let startVal = currCount - numLines;
-  if (startVal < 0) {
-    startVal = texts.length - numLines;
-  }
-  for (let i = startVal; i < startVal + numLines; i++) {
-    texts[i].style.display = "none";
-  }
-  // Show new set of lines
-  for (let j = currCount; j < currCount + numLines; j++) {
-    texts[j].style.display = "inline";
-  }
-  currCount += numLines;
-  if (currCount >= texts.length) {
-    currCount = 0;
-  }
-}
-
-// Since all of our blobs are using the same animation, we only
-// need to listen to one of them
-blobs[0].addEventListener("animationiteration", nextIteration);
-
-colorBlobs();
