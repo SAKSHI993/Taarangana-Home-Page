@@ -35,13 +35,13 @@
 
 .social-media ul li a .fa {
 	position: relative;
-	color: #262626; 				/*  لون الايقونة الاساسى */
+	color: #262626; 				
 	transition: .5s;
 	z-index: 3;
 }
 
 .social-media ul li a:hover .fa {
-	color: #FFFFFF; 				/* لون الايقونة بعد الهوفر */
+	color: #FFFFFF; 				
 	transform: rotateY(360deg);
 }
 
@@ -62,16 +62,16 @@
 	top: 0 ;
 }
 
-ul li:nth-child(1) a {
+.social-media ul li:nth-child(1) a {
     background-color: rgb(91, 175, 253);
 }
-ul li:nth-child(2) a {
+.social-media ul li:nth-child(2) a {
     background-color: #99d5f8e7;
 }
-ul li:nth-child(3) a {
+.social-media ul li:nth-child(3) a {
     background-color: rgb(252, 101, 101);
 }
-ul li:nth-child(4) a {
+.social-media ul li:nth-child(4) a {
     background-color: #FF80B0;
 }
 .social-media ul li:nth-child(1) a:before {

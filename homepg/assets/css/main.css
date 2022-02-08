@@ -1752,6 +1752,9 @@ min-height: 100%;
 .outer-nav--return.is-vis {
   display: block;
 }
+.outer-nav > li a{
+  color: #FFFFFF;
+}
 .outer-nav > li {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
