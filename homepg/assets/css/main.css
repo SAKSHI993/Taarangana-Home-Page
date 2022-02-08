@@ -839,7 +839,7 @@ min-height: 100%;
   .intro--banner text {
     font-size: 75px;
     font-weight: bolder;
-    bold: 1000;
+    /* bold: 1000; */
   }
   .intro--banner img {
     width: 330px;
